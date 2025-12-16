@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Portfolio</title>
+    <!-- this link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- this link for css page -->
+    <link rel="stylesheet" href="style.css">
+    <!-- this link for fonts -->
+    <link rel="icon" href="images/admin.jpg" style="object-fit: cover; border-radius: 50%;">
+    <style>
+      
+        @font-face {
+            font-family: rubik;
+            src: url(fonts/rubik.ttf);
+        }
+
+        @font-face {
+            font-family: poppin;
+            src: url(fonts/poppin.ttf);
+            font-weight: normals;
+        }
+    </style>
+</head>
+<div id="preloader">
+    <div class="loader"></div>
+</div>
+
+<!-- ============================Portfolio Wrapper============================= -->
+<div class="website-wrapper">
+    <!-- admin profile side -->
+    <div class="admin-profile">
+        <div class="admin-content">
+            <img src="images/admin.jpg" alt="">
+            <h3>Farhat Ullah</h3>
+            <div class="line1"></div>
+            <div class="admin-birthday">
+                <p style="color: white; font-weight: 600;">Residence:</p>
+                <p>Canada</p>
+                <p style="color: white; font-weight: 600;">City:</p>
+                <p>Toronto:</p>
+                <p style="color: white; font-weight: 600;">Age:</p>
+                <p>26</p>
+            </div>
+
+        </div>
+        <div class="admin-skill">
+
+            <div class="skills-container">
+                <h4>Skills</h4>
+                <div class="skills">
+                    <div class="skill">
+                        <div class="progress-circle">
+                            <svg>
+                                <circle class="bg" cx="15" cy="15" r="14"></circle>
+                                <circle class="progress" cx="15" cy="15" r="14" data-value="90"></circle>
+                            </svg>
+                            <div class="percentage">0%</div>
+                        </div>
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="progress-circle">
+                            <svg>
+                                <circle class="bg" cx="15" cy="15" r="14"></circle>
+                                <circle class="progress" cx="15" cy="15" r="14" data-value="80"></circle>
+                            </svg>
+                            <div class="percentage">0%</div>
+                        </div>
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="progress-circle">
+                            <svg>
+                                <circle class="bg" cx="15" cy="15" r="14"></circle>
+                                <circle class="progress" cx="15" cy="15" r="14" data-value="90"></circle>
+                            </svg>
+                            <div class="percentage">0%</div>
+                        </div>
+                        <p>JS</p>
+                    </div>
+
+                    <div class="skill">
+                        <div class="progress-circle">
+                            <svg>
+                                <circle class="bg" cx="15" cy="15" r="14"></circle>
+                                <circle class="progress" cx="15" cy="15" r="14" data-value="90"></circle>
+                            </svg>
+                            <div class="percentage">0%</div>
+                        </div>
+                        <p>PHP</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container"><br><br>
+                <a href="images/blank.pdf" download="My_CV.pdf" class="download-btn playSoundBtn">
+                    <span class="">DOWNLOAD CV</span>
+                    <i class="ph ph-cloud-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- website-sections -->
+    <div class="website-sections">
+        <!-- Hero Section -->
+        <section class="home-section" id="home-section">
+            <div class="home-wrapper">
+                <div class="home-content">
+                    <p>WELCOME TO MY WEBSITE</p>
+                    <h2>Hi, I’m Farhat Ullah</h2>
+                    <p class="typing-text"><span id="typed"></span></p>
+                    <p class="desc">Showcasing my best work—crafted with passion,<br> precision, and creativity. Let’s
+                        build something <br>amazing together!" </p>
+                    <button class="hero-btn playSoundBtn">My Resume</button>
+                </div>
+                <div class="home-img">
+                    <div class="heroImg-bg">
+                        <img src="images/admin.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->
+        <section class="about-section" id="about-section">
+            <div class="about-wrapper">
+                <div class="about-img">
+                    <img src="images/admin.jpg" alt="">
+                    <div class="about-icons">
+                        <li class=" facebok"><i class="fa-brands fa-facebook"></i></li>
+                        <li class="instagram"><i class="fa-brands fa-square-instagram"></i></li>
+                        <li class="linkedin"><i class="fa-brands fa-linkedin"></i></li>
+                        <li class="twitter"><i class="fa-brands fa-square-twitter"></i></li>
+                        <li class="youtube"><i class="fa-brands fa-youtube"></i></li>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3>I am Professional Web Developer</h3>
+                    <p>I design and build high-quality websites for businesses and individuals. From modern portfolios
+                        to dynamic web applications, I turn ideas into fully responsive and user-friendly digital
+                        experiences.
+                        My mission is to help clients grow online through elegant and fast websites.</p>
+                    <button class="about-btn  playSoundBtn">My Projects</button>
+                    <button class="about-btn about-contact playSoundBtn">Contact Me</button>
+                </div>
+            </div>
+        </section>
+        <!-- My Service secion -->
+        <section class="services-section" id="services-section">
+            <h3>Our Services</h3>
+            <p>I design products that are more than pretty. I make them shippable and <br>
+                usable, tempor non mollit dolor et do aute.</p>
+            <div class="servicesCard-wrapper">
+                <div class="services-card">
+                    <li><i class="fa-solid fa-code"></i></li>
+                    <h3>Website Development</h3>
+                    <p>I create fully responsive and fast websites using the latest technologies.</p>
+                    <button class=" playSoundBtn">Read More</button>
+                </div>
+                <div class="services-card">
+                    <li><i class="fa-brands fa-wordpress"></i></li>
+                    <h3> WordPress Customization</h3>
+                    <p> I design and customize WordPress websites with Elementor and other plugins.</p>
+                    <button class=" playSoundBtn">Read More</button>
+                </div>
+                <div class="services-card">
+                    <li><i class="fa-solid fa-chart-simple"></i></li>
+                    <h3>E-Commerce Solutions</h3>
+                    <p> I build online stores with features like cart, payment gateway, and product management.</p>
+                    <button class=" playSoundBtn">Read More</button>
+                </div>
+                <div class="services-card">
+                    <li><i class="fa-solid fa-marker"></i></li>
+                    <h3> UI/UX Design</h3>
+                    <p> I design modern and user-friendly interfaces that improve user experience.</p>
+                    <button class=" playSoundBtn">Read More</button>
+                </div>
+                <div class="services-card">
+                    <li><i class="fa-solid fa-gauge-high"></i></li>
+                    <h3> Website Speed Optimization</h3>
+                    <p> I optimize your website to load faster and rank better on search engines.</p>
+                    <button class=" playSoundBtn">Read More</button>
+                </div>
+                <div class="services-card">
+                    <li><i class="fa-solid fa-viruses"></i></li>
+                    <h3> Bug Fixing & Support</h3>
+                    <p>I provide website maintenance, bug fixing, and technical support services.</p>
+                    <button class=" playSoundBtn">Read More</button>
+                </div>
+            </div>
+        </section>
+        <!-- skill section -->
+        <section class="skill-section" id="skill-section">
+            <h3>My Skill</h3>
+            <p>I design products that are more than pretty
+                I make them shippable <br> and usable, ttempor non mollit dolor
+                et do aute</p>
+            <div class="toolWrapper">
+                <div class="software1">
+                    <img src="images/html.png" alt="css tools">
+                    <div class="tiltes">HTML</div>
+                </div>
+                <div class="software1">
+                    <img src="images/css.png" alt="css tools">
+                    <div class="tiltes">CSS</div>
+                </div>
+                <div class="software1">
+                    <img src="images/wordpress.png" alt="css tools">
+                    <div class="tiltes" style="left: -10px !important;">WordPress</div>
+                </div>
+                <div class="software1">
+                    <img src="images/ps.png" alt="css tools">
+                    <div class="tiltes" style="left: -10px !important;">Photoshope</div>
+                </div>
+                <div class="software1">
+                    <img src="images/php.png" alt="css tools">
+                    <div class="tiltes">PHP</div>
+                </div>
+                <div class="software1">
+                    <img src="images/figme.png" alt="css tools">
+                    <div class="tiltes" style="left: 12px !important;">Figma</div>
+                </div>
+            </div>
+        </section>
+        <!-- resume section -->
+        <section class="resume-section" id="resume-section">
+            <div class="resume-wrapper">
+                <!-- Experience -->
+                <div class="resume-column">
+                    <h2>Experiences</h2>
+                    <div class="timeline">
+                        <div class="timeline-item" data-number="1">
+                            <div class="timeline-bar">2020 - now</div>
+                            <div class="timeline-title">Founder & Creative Director</div>
+                            <div class="timeline-subtitle">Kyros Studio</div>
+                            <div class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                tempora perferendis vero officia enim impedit voluptatem dignissimos.</div>
+                        </div>
+
+                        <div class="timeline-item" data-number="2">
+                            <div class="timeline-bar">2010 - 2014</div>
+                            <div class="timeline-title">Senior UI / UX Designer</div>
+                            <div class="timeline-subtitle">Google Inc</div>
+                            <div class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                tempora perferendis vero officia enim impedit voluptatem dignissimos.</div>
+                        </div>
+
+                        <div class="timeline-item" data-number="3">
+                            <div class="timeline-bar">2008 - 2010</div>
+                            <div class="timeline-title">Founder & Creative Director</div>
+                            <div class="timeline-subtitle">Kyros Studio</div>
+                            <div class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                tempora perferendis vero officia enim impedit voluptatem dignissimos.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-column">
+                    <h2>Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item" data-number="4">
+                            <div class="timeline-bar">2004 - 2008</div>
+                            <div class="timeline-title">Master in Design</div>
+                            <div class="timeline-subtitle">New York University</div>
+                            <div class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                tempora perferendis vero officia enim impedit voluptatem dignissimos.</div>
+                        </div>
+
+                        <div class="timeline-item" data-number="5">
+                            <div class="timeline-bar">2004 - 2008</div>
+                            <div class="timeline-title">Bachelor of Arts</div>
+                            <div class="timeline-subtitle">University of London</div>
+                            <div class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                tempora perferendis vero officia enim impedit voluptatem dignissimos.</div>
+                        </div>
+
+                        <div class="timeline-item" data-number="6">
+                            <div class="timeline-bar">2004 - 2006</div>
+                            <div class="timeline-title">Artist of College</div>
+                            <div class="timeline-subtitle">University of Sydney</div>
+                            <div class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                tempora perferendis vero officia enim impedit voluptatem dignissimos.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section -->
+        <section class="portfolio-section" id="portfolio-section">
+
+            <div class="tab">
+                <button class="tablinks playSoundBtn" onclick="openCity(event, 'all')" id="defaultOpen">All</button>
+                <button class="tablinks playSoundBtn" onclick="openCity(event, 'web')">Web Template</button>
+                <button class="tablinks playSoundBtn" onclick="openCity(event, 'WordPress')">WordPress</button>
+                <button class="tablinks playSoundBtn" onclick="openCity(event, 'design')">Ui/Ux Design</button>
+                <button class="tablinks playSoundBtn" onclick="openCity(event, 'wix')">Wix</button>
+            </div>
+            <div class="tabsContent-wrapper">
+                <div id="all" class="tabcontent">
+                    <div class="all-projects">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio1.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>wordpress Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- two -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio2.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Web Template</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- three -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio3.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Wax Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- four -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio4.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>UI/UX Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- five -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio5.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>wordpress Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- sixe -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio6.gif" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Web Template</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- sevin -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio7.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>UI/UX Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- eight -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio8.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Wax Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="web" class="tabcontent">
+                    <div class="all-projects">
+                        <!-- two -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio2.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Web Template</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+
+                        <!-- sixe -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio6.gif" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Web Template</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="WordPress" class="tabcontent">
+                    <div class="all-projects">
+                        <div class="portfolio-card">
+                            <img src="images/portfolio1.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>wordpress Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- five -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio5.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>wordpress Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="design" class="tabcontent">
+                    <div class="all-projects">
+                        <!-- four -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio4.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>UI/UX Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                        <!-- sevin -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio7.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>UI/UX Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="wix" class="tabcontent">
+
+                    <div class="all-projects">
+
+                        <!-- three -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio3.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Wax Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+
+                        <!-- eight -->
+                        <div class="portfolio-card">
+                            <img src="images/portfolio8.jpg" alt="this is project img">
+                            <div class="project-overlay">
+                                <h3>Wax Project</h3>
+                                <li class="playSoundBtn"><i class="fa-solid fa-arrow-right"></i></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog Section -->
+        <section class="blog-section" id="blog-section">
+            <h3>Blog</h3>
+            <p>I design products that are more than pretty. I make them shippable and <br> usable,
+                ttempor non mollit dolor et do aute</p><br>
+            <div class="post-one">
+                <div class="post-img">
+                    <img src="images/post1.png" alt="post img">
+                </div>
+                <div class="post-content">
+                    <p>UI Design, 03 May 2025</p>
+                    <div class="post-title">
+                        <h4>Elevate your mornings with <br> perfectly brewed coffee</h4>
+                        <button class="post-btn playSoundBtn" data-modal="modal1">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- two/ -->
+            <div class="post-one">
+                <div class="post-img">
+                    <img src="images/post2.png" alt="post img">
+                </div>
+                <div class="post-content">
+                    <p>UI Design, 03 May 2025</p>
+                    <div class="post-title">
+                        <h4>Mastering the clock guide <br> to time management</h4>
+                        <button class="post-btn playSoundBtn" data-modal="modal2">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- three -->
+            <div class="post-one">
+                <div class="post-img">
+                    <img src="images/post3.png" alt="post img">
+                </div>
+                <div class="post-content">
+                    <p>UI Design, 03 May 2025</p>
+                    <div class="post-title">
+                        <h4>Homeward bound: <br> Crafting a productive home</h4>
+                        <button class="post-btn playSoundBtn"  data-modal="modal3">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- four -->
+        </section>
+
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-close="modal1">&times;</span>
+                <h2>Post <span style="color: #ff014f;">Details</span> </h2>
+                <div class="singlePost-content">
+                    <img src="images/post1.png" alt="">
+                    <pre>September 12, 2023 Learn</pre>
+                    <h3>Elevate your mornings with <br>
+                        perfectly brewed coffee</h3>
+                    <p>Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh
+                        facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat.
+                        Curabitur this is a text link libero tempus congue. <br>
+
+                        Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi
+                        elementum pretium. Donec et justo ante. Vivamus egestas sodales est, eu rhoncus urna semper eu.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer
+                        tristique elit lobortis purus bibendum, quis dictum metus mattis. Phasellus posuere felis sed
+                        eros porttitor mattis. Curabitur massa magna, tempor in blandit id, porta in ligula. Aliquam
+                        laoreet nisl massa, at interdum mauris sollicitudin et.</p>
+                        <h4>Requirements</h4>
+                        <p>We do not require any previous experience or pre-defined skills to take this course. A great orientation would be enough to master UI/UX design.
+                            A computer with a good internet connection.
+                            Adobe Photoshop (OPTIONAL)</p>
+                </div>
+            </div>
+        </div>
+         <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" data-close="modal2">&times;</span>
+        <h2>Post <span style="color: #ff014f;">Details</span> </h2>
+        <div class="singlePost-content">
+            <img src="images/post2.png" alt="">
+            <pre>September 12, 2023 Learn</pre>
+            <h3>Mastering the clock: A guide <br>
+                 to time management</h3>
+            <p>Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh
+                facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat.
+                Curabitur this is a text link libero tempus congue. <br>
+
+                Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi
+                elementum pretium. Donec et justo ante. Vivamus egestas sodales est, eu rhoncus urna semper eu.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer
+                tristique elit lobortis purus bibendum, quis dictum metus mattis. Phasellus posuere felis sed
+                eros porttitor mattis. Curabitur massa magna, tempor in blandit id, porta in ligula. Aliquam
+                laoreet nisl massa, at interdum mauris sollicitudin et.</p>
+                <h4>Requirements</h4>
+                <p>We do not require any previous experience or pre-defined skills to take this course. A great orientation would be enough to master UI/UX design.
+                    A computer with a good internet connection.
+                    Adobe Photoshop (OPTIONAL)</p>
+        </div>
+    </div>
+        </div>
+          <!-- Modal 3 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" data-close="modal3">&times;</span>
+                <h2>Post <span style="color: #ff014f;">Details</span> </h2>
+                <div class="singlePost-content">
+                    <img src="images/post3.png" alt="">
+                    <pre>September 12, 2023 Learn</pre>
+                    <h3>Homeward bound: <br> Crafting a productive home</h3>
+                    <p>Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh
+                        facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat.
+                        Curabitur this is a text link libero tempus congue. <br>
+        
+                        Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi
+                        elementum pretium. Donec et justo ante. Vivamus egestas sodales est, eu rhoncus urna semper eu.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer
+                        tristique elit lobortis purus bibendum, quis dictum metus mattis. Phasellus posuere felis sed
+                        eros porttitor mattis. Curabitur massa magna, tempor in blandit id, porta in ligula. Aliquam
+                        laoreet nisl massa, at interdum mauris sollicitudin et.</p>
+                        <h4>Requirements</h4>
+                        <p>We do not require any previous experience or pre-defined skills to take this course. A great orientation would be enough to master UI/UX design.
+                            A computer with a good internet connection.
+                            Adobe Photoshop (OPTIONAL)</p>
+                </div>
+            </div>
+  </div>
+        <!-- testimonail section -->
+        <section class="testimonial-section" id="testimonail-section">
+            <h3>What People Say</h3>
+            <p>I design products that are more than pretty. I make them shippable and <br>
+                usable, ttempor non mollit dolor et do aute</p>
+            <div class="client-wrapper">
+                <div class="client-card">
+                    <div class="name-label">
+                        <h4>Farhat Ullah</h4>
+                        <p> Plugin Developer</p>
+                        <div class="client-img">
+                            <img src="images/say1.jpg" alt="">
+                        </div>
+                        <div class="cleint-line"></div>
+                        <div class="client-content">
+                            <div class="reviwe">&starf;&starf;&starf;&starf;&starf;</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore ullam neque qui
+                                facere provident eligendi ipsum voluptatem!</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- two -->
+                <div class="client-card">
+                    <div class="name-label">
+                        <h4>Mudassir Khan</h4>
+                        <p>Web Developer</p>
+                        <div class="client-img">
+                            <img src="images/say2.jpg" alt="">
+                        </div>
+                        <div class="cleint-line"></div>
+                        <div class="client-content">
+                            <div class="reviwe">&starf;&starf;&starf;&starf;&starf;</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore ullam neque qui
+                                facere provident eligendi ipsum voluptatem!</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- three -->
+                <div class="client-card">
+                    <div class="name-label">
+                        <h4>Ilyas Khan</h4>
+                        <p>Grahpic Designer</p>
+                        <div class="client-img">
+                            <img src="images/say3.jpg" alt="">
+                        </div>
+                        <div class="cleint-line"></div>
+                        <div class="client-content">
+                            <div class="reviwe">&starf;&starf;&starf;&starf;&starf;</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore ullam neque qui
+                                facere provident eligendi ipsum voluptatem!</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- four -->
+                <div class="client-card">
+                    <div class="name-label">
+                        <h4>Nouman Ahmad</h4>
+                        <p>WordPress Developer</p>
+                        <div class="client-img">
+                            <img src="images/say4.jpg" alt="">
+                        </div>
+                        <div class="cleint-line"></div>
+                        <div class="client-content">
+                            <div class="reviwe">&starf;&starf;&starf;&starf;&starf;</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore ullam neque qui
+                                facere provident eligendi ipsum voluptatem!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section -->
+        <section class="contact-section" id="contact-section">
+            <h3>Contact Me.</h3>
+            <p>I design products that are more than pretty. I make them shippable and
+                <br> usable, ttempor non mollit
+                dolor et do aute
+            </p>
+            <div class="contact-form">
+                <form action="#">
+                    <input type="text" name="" id="" placeholder="Your name">
+                    <input type="email" name="" id="" placeholder="your email">
+                    <input type="tel" name="" id="" placeholder="your phone"><br><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea><br><br>
+                    <input type="submit" name="" id="">
+                </form>
+            </div>
+        </section>
+        <!-- footer section -->
+        <footer>
+            <a href="//tabsap.com" target="_blank">Copyright by@tabsap.com</a>
+        </footer>
+
+    </div>
+    <!-- website navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                
+            </div>
+            <ul>
+                <li>
+                    <a href="#home-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-house"></i></i>
+                    </a>
+                    <a href="#home-section" class="text">Home</a>
+                </li>
+                <li>
+                    <a href="#about-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-user"></i></i>
+                    </a>
+                    <a href="#about-section" class="text">About</a>
+                </li>
+                <li>
+                    <a href="#services-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-calendar"></i></i>
+                    </a>
+                    <a href="#services-section" class="text">Services</a>
+                </li>
+                <li>
+                    <a href="#skill-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-graduation-cap"></i></i>
+                    </a>
+                    <a href="#skill-section" class="text">Skill</a>
+                </li>
+                <li>
+                    <a href="#resume-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-file"></i></i>
+                    </a>
+                    <a href="#resume-section" class="text">Resume</a>
+                </li>
+                <li>
+                    <a href="#portfolio-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-folder"></i></i>
+                    </a>
+                    <a href="#portfolio-section" class="text">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#blog-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-blog"></i></i>
+                    </a>
+                    <a href="#blog-section" class="text">Blog</a>
+                </li>
+                <li>
+                    <a href="#testimonail-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-message"></i></i>
+                    </a>
+                    <a href="#testimonail-section" class="text">Testimonail</a>
+                </li>
+                <li>
+                    <a href="#contact-section" class="icon">
+                        <i class="home-icon"><i class="fa-solid fa-envelope"></i></i>
+                    </a>
+                    <a href="#contact-section" class="text">Contact</a>
+                </li>
+            </ul>
+            <div class="socail-icons">
+                <div class="share-icon">
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="medai-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<!-- Preloader Start -->
+<!-- <div id="preloader">
+    <div class="loader"></div>
+</div> -->
+<!-- Preloader End -->
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+<!-- mouse cursor code -->
+<div class="scroll-btn" id="scrollBtn" onclick="scrollToTop()">
+    <svg>
+        <circle class="progress-bg"></circle>
+        <circle class="progress-value" id="progressCircle"></circle>
+    </svg>
+    <span>↑</span>
+</div>
+<body class="light">
+
+
+    <!-- auto type js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
